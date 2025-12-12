@@ -1,6 +1,6 @@
 # BR-001 — [TÍTULO CURTO E CLARO]
 
-- **Ambiente:** Windows 11 / (Chrome ou Edge) / Data: AAAA-MM-DD
+- **Ambiente:** Windows 11 / (Chrome ) / Data: 2025-12-DD
 - **Pré-condição:** (ex.: usuário logado, nova conversa aberta)
 
 ## Passos para reproduzir
