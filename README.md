@@ -8,19 +8,25 @@ Esta seção do portfólio foca na aplicação de técnicas de QA manual sobre o
 
 ### Estrutura
 
-- `01-bug-reports/` — Relatórios de bug e melhorias identificados:
+Os artefatos referentes ao AbacusAI estão organizados em:
+
+- `abacus/01-bug-reports/` — Relatórios de bug e melhorias identificados:
   - BR-001 — Travamento da janela do aplicativo ao enviar segundo prompt
   - BR-002 — Melhoria na renomeação de abas de conversa
   - BR-003 — Falta de aviso de falha de rede durante envio de prompt
   - BR-004 — Remoção de múltiplas linhas em branco ao enviar mensagem (melhoria de usabilidade)
 
-- `02-test-cases/` — Casos de teste documentados para funcionalidades do AbacusAI:
+- `abacus/02-test-cases/` — Casos de teste documentados para funcionalidades do AbacusAI:
   - TC-001 — Comportamento frente a instruções múltiplas e contraditórias
   - TC-002 — Atalhos Enter e Shift+Enter e preservação de quebras de linha
+  - API-001 — Criar post via API pública JSONPlaceholder (POST /posts)
+  - API-002 — Criar post SEM título via API pública JSONPlaceholder (POST /posts)
 
-- `03-test-plan/` — Plano de teste inicial para o aplicativo AbacusAI Desktop.
+- `abacus/03-test-plan/` — Plano de teste inicial para o aplicativo AbacusAI Desktop.
 
-- `05-evidence/` — Evidências visuais (prints) que suportam os bug reports.
+- `abacus/04-api-tests-postman/` — Contém informações sobre a collection do Postman utilizada e pode abrigar o arquivo de exportação da collection.
+
+- `abacus/05-evidence/` — Evidências visuais (prints) que suportam os bug reports.
 
 ## 2. Testes de API (JSONPlaceholder com Postman)
 
@@ -28,11 +34,11 @@ Esta seção demonstra habilidades em teste de API utilizando a ferramenta Postm
 
 ### Estrutura
 
-- `02-test-cases/` — Casos de teste documentados para cenários de API:
+- `abacus/02-test-cases/` — Casos de teste documentados para cenários de API:
   - API-001 — Criar post via API pública JSONPlaceholder (POST /posts)
   - API-002 — Criar post SEM título via API pública JSONPlaceholder (POST /posts)
 
-- `04-api-tests-postman/` — Contém informações sobre a collection do Postman utilizada e pode abrigar o arquivo de exportação da collection.
+- `abacus/04-api-tests-postman/` — Contém informações sobre a collection do Postman utilizada e pode abrigar o arquivo de exportação da collection.
 
 ### Habilidades demonstradas
 
