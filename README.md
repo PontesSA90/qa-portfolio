@@ -1,32 +1,24 @@
-# qa-portfolio
-Portfólio QA Manual Júnior - Bug Reports, Test Cases e Testes de API
-🎯 Portfólio QA Manual Júnior
+# QA Portfolio — PontesSA90
 
-## 👨‍💻 Sobre mim
-- QA Manual Júnior em formação
-- Foco em testes funcionais, APIs e documentação
-- Disponível para vagas remotas/presenciais
+Este repositório reúne exemplos de trabalho como QA Manual, usando o produto AbacusAI/ChatLLM como sistema sob teste.
 
-## 📁 Projetos
+## Estrutura
 
-### 01. Bug Reports
-Documentação de 20+ bugs reais encontrados em aplicações web
+- `01-bug-reports/` — Relatórios de bug e melhorias:
+  - BR-001 — Travamento da janela do aplicativo ao enviar segundo prompt
+  - BR-002 — Melhoria na renomeação de abas de conversa
+  - BR-003 — Falta de aviso de falha de rede durante envio de prompt
+  - BR-004 — Remoção de múltiplas linhas em branco ao enviar mensagem (melhoria de usabilidade)
 
-### 02. Test Cases
-Matriz de testes com cenários positivos/negativos
+- `02-test-cases/` — Casos de teste:
+  - TC-001 — Comportamento frente a instruções múltiplas e contraditórias
+  - TC-002 — Atalhos Enter e Shift+Enter e preservação de quebras de linha
 
-### 03. Plano de Testes
-Estratégia completa para testar aplicações web
+- `05-evidence/` — Evidências (prints) ligadas aos bug reports.
 
-### 04. Testes de API
-Coleção Postman com testes automatizados em APIs públicas
+## Habilidades demonstradas
 
-## 🛠️ Ferramentas
-- **Web**: Chrome DevTools, F12
-- **API**: Postman
-- **Documentação**: Markdown, GitHub
-- **Gerenciamento**: Jira/Trello (conhecimento)
-
-## 📞 Contato
-- LinkedIn: 
-- Email: estevam.ponte@gmail.com
+- Criação de bug reports claros, com passos para reproduzir, resultado atual/esperado, severidade e prioridade.
+- Criação de casos de teste (test cases) a partir de cenários reais.
+- Uso de Git e GitHub para versionamento e organização de artefatos de QA.
+- Testes exploratórios de usabilidade e comportamento sob falhas (ex.: queda de rede).
