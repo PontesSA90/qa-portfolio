@@ -37,6 +37,16 @@ Esta seção do portfólio demonstra habilidades em automação de testes de UI 
     pytest abacus/06-automation/test_demoqa_form.py -v
     ```
 
+ ### `test_demoqa_form_validation.py`
+
+- Cenário negativo: e-mail inválido no formulário Practice Form.
+- Demonstra validação do lado do navegador (`checkValidity()`).
+
+### `test_demoqa_checkboxes.py`
+
+- Interação com árvore de checkboxes na página "Check Box".
+- Valida que as opções selecionadas aparecem na área de resultado.
+
 ## Habilidades Demonstradas
 
 -   Configuração de ambiente para automação de testes (venv, Playwright, Pytest).
