@@ -28,6 +28,17 @@ Os artefatos referentes ao AbacusAI estão organizados em:
 
 - `abacus/05-evidence/` — Evidências visuais (prints) que suportam os bug reports.
 
+## Habilidades Gerais Demonstradas
+
+- Criação de bug reports claros, com passos para reproduzir, resultado atual/esperado, severidade e prioridade.
+- Criação de casos de teste (test cases) a partir de cenários reais e requisitos de API.
+- Elaboração de um plano de teste.
+- Uso de Git e GitHub para versionamento e organização de artefatos de QA.
+- Testes exploratórios de usabilidade e comportamento sob falhas (ex.: queda de rede).
+- Pensamento crítico para identificar e documentar comportamentos inesperados ou melhorias.
+
+---
+
 ## 2. Testes de API (JSONPlaceholder com Postman)
 
 Esta seção demonstra habilidades em teste de API utilizando a ferramenta Postman e uma API pública de demonstração (JSONPlaceholder). Estes testes são exercícios práticos e não estão relacionados ao produto AbacusAI.
@@ -46,16 +57,21 @@ Esta seção demonstra habilidades em teste de API utilizando a ferramenta Postm
 - Análise de respostas de API (status codes, JSON body).
 - Planejamento e documentação de casos de teste para cenários de sucesso e de erro/validação em APIs.
 
-## Habilidades Gerais Demonstradas
+## 3. Automação de Testes (Playwright com Python)
 
-- Criação de bug reports claros, com passos para reproduzir, resultado atual/esperado, severidade e prioridade.
-- Criação de casos de teste (test cases) a partir de cenários reais e requisitos de API.
-- Elaboração de um plano de teste.
-- Uso de Git e GitHub para versionamento e organização de artefatos de QA.
-- Testes exploratórios de usabilidade e comportamento sob falhas (ex.: queda de rede).
-- Pensamento crítico para identificar e documentar comportamentos inesperados ou melhorias.
+Esta seção demonstra habilidades em automação de testes de UI (User Interface) utilizando o framework Playwright com Python.
 
----
+### Estrutura
+
+- `abacus/06-automation/` — Contém os scripts de automação e um `README.md` detalhado sobre a configuração e os testes.
+
+### Habilidades demonstradas
+
+- Configuração de ambiente para automação de testes.
+- Escrita de scripts para interagir com elementos de UI.
+- Validação de resultados na interface do usuário.
+- Uso de seletores CSS.
+
 
 ### Próximos Passos
 
