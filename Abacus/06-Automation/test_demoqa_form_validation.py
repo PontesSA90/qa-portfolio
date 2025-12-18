@@ -3,40 +3,40 @@ from playwright.sync_api import sync_playwright
 
 def test_practice_form_invalid_email():
     """
-    Cenário negativo:
-    Preencher o formulário Practice Form com e-mail inválido
-    e verificar se o campo é marcado como inválido pelo navegador.
+    Negative scenario:
+    Fill the Practice Form with an invalid email
+    and verify that the field is marked as invalid by the browser.
     """
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
 
-        # 1. Acessar a página de Practice Form
+        # 1. Navigate to the Practice Form page
         page.goto("https://demoqa.com/automation-practice-form")
 
-        # 2. Preencher o formulário com e-mail inválido
+        # 2. Fill the form with an invalid email
         page.fill("#firstName", "Estevam")
         page.fill("#lastName", "Pontes")
-        page.fill("#userEmail", "email-invalido")  # falta @ e domínio
-        page.click("label[for='gender-radio-1']")  # selecionar Male
-        page.fill("#userNumber", "1234567890")     # telefone válido
+        page.fill("#userEmail", "invalid-email")  # missing @ and domain
+        page.click("label[for='gender-radio-1']")  # select Male
+        page.fill("#userNumber", "1234567890")     # valid phone number
 
-        # 3. Clicar em Submit
+        # 3. Click Submit
         page.click("#submit")
 
-        # 4. Verificar se o campo de e-mail ficou marcado como inválido
+        # 4. Verify that the email field is marked as invalid
         email_input = page.locator("#userEmail")
 
-        # Alguns navegadores usam pseudo-classes CSS como :invalid;
-        # aqui vamos checar o atributo 'class' que fica diferente
+        # Some browsers use CSS pseudo-classes like :invalid;
+        # here we check the 'class' attribute which may differ
         classes = email_input.get_attribute("class") or ""
 
-        # Esperamos que a classe contenha 'field-error' ou algo do tipo,
-        # mas o DemoQA pode não ter isso. Então vamos checar o estado de validação nativo do input.
+        # We expect the class to contain 'field-error' or similar,
+        # but DemoQA may not have this. So we check the native input validation state.
         is_valid = page.evaluate("(el) => el.checkValidity()", email_input.element_handle())
 
-        assert is_valid is False, "Esperava que o e-mail fosse considerado inválido pelo navegador."
+        assert is_valid is False, "Expected the email to be considered invalid by the browser."
 
-        print("\n✅ Teste passou: e-mail inválido foi detectado como inválido.")
+        print("\n✅ Test passed: invalid email was detected as invalid.")
 
         browser.close()
