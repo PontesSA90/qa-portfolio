@@ -1,91 +1,91 @@
 # Test Plan — AbacusAI Desktop (Chat)
 
-## 1. Objetivo
+## 1. Objective
 
-Este plano de teste define a estratégia de testes manuais aplicada ao aplicativo desktop do AbacusAI (modo Chat), com foco em:
-- estabilidade da interface durante o envio de prompts
-- experiência do usuário (usabilidade de chat)
-- comportamento em condições de rede adversas
-- comportamento frente a prompts complexos
+This test plan defines the manual testing strategy applied to the AbacusAI desktop application (Chat mode), focusing on:
+- UI stability during prompt submission
+- User experience (chat usability)
+- Behavior under adverse network conditions
+- Behavior when handling complex prompts
 
-## 2. Escopo
+## 2. Scope
 
-### 2.1. Incluído no escopo
+### 2.1. In scope
 
-- Aplicativo AbacusAI para Windows (client desktop)
-- Funcionalidades de:
-  - login e abertura de conversa
-  - envio de mensagens (prompts)
-  - exibição de respostas
-  - atalhos e interação básica no campo de mensagem
+- AbacusAI application for Windows (desktop client)
+- Functionalities of:
+  - login and conversation initiation
+  - message (prompt) submission
+  - response display
+  - shortcuts and basic interaction in the message input field
 
-### 2.2. Fora do escopo
+### 2.2. Out of scope
 
-- Backend / servidores internos do AbacusAI
-- Fluxos avançados de configuração de modelos
-- Integrações externas (Slack, e-mail, etc.)
-- Performance sob carga massiva (stress test automatizado)
+- AbacusAI backend / internal servers
+- Advanced model configuration flows
+- External integrations (Slack, email, etc.)
+- Performance under massive load (automated stress testing)
 
-## 3. Ambiente de Teste
+## 3. Test Environment
 
-- Sistema Operacional: Windows 11
-- Aplicativo: AbacusAI Desktop (Chat)
-- Conexão: internet residencial com possibilidade de simular queda (desligando Wi‑Fi)
-- Usuário de teste: conta pessoal do testador
+- Operating System: Windows 11
+- Application: AbacusAI Desktop (Chat)
+- Connection: Home internet with the ability to simulate outages (by turning off Wi-Fi)
+- Test user: Tester's personal account
 
-## 4. Tipos de Teste
+## 4. Test Types
 
-- **Teste funcional:** Verificar se o envio de mensagens, resposta e navegação básica funcionam conforme esperado.
-- **Teste de usabilidade:** Observar clareza de feedback, organização da interface e facilidade de uso.
-- **Teste de robustez/erro:** Avaliar comportamento em:
-  - queda de rede durante envio de prompt
-  - prompts longos ou complexos
-- **Teste exploratório:** Explorar o sistema em busca de comportamentos inesperados ou melhorias de UX.
+- **Functional testing:** Verify that message submission, response, and basic navigation work as expected.
+- **Usability testing:** Observe feedback clarity, UI organization, and ease of use.
+- **Robustness/Error testing:** Evaluate behavior under:
+  - network outage during prompt submission
+  - long or complex prompts
+- **Exploratory testing:** Explore the system for unexpected behaviors or UX improvements.
 
-## 5. Itens de Teste
+## 5. Test Items
 
-Os seguintes casos de teste foram definidos:
+The following test cases have been defined:
 
-- `TC-001` — Comportamento frente a instruções múltiplas e contraditórias
-- `TC-002` — Atalhos Enter e Shift+Enter e preservação de quebras de linha
+- `TC-001` — Behavior under multiple and contradictory instructions
+- `TC-002` — Enter and Shift+Enter shortcuts in the message field
 
-Novos casos de teste podem ser adicionados conforme forem identificados novos cenários relevantes.
+New test cases may be added as new relevant scenarios are identified.
 
-## 6. Critérios de Entrada
+## 6. Entry Criteria
 
-Os testes podem começar quando:
+Testing can begin when:
 
-- O aplicativo AbacusAI desktop está instalado e acessível.
-- O testador possui uma conta válida e consegue fazer login.
-- A conexão de internet está disponível (para testes normais) ou controlada (para testes de queda de rede).
+- The AbacusAI desktop application is installed and accessible.
+- The tester has a valid account and can log in.
+- Internet connection is available (for normal tests) or controlled (for network outage tests).
 
-## 7. Critérios de Saída
+## 7. Exit Criteria
 
-Os testes são considerados concluídos quando:
+Testing is considered complete when:
 
-- Todos os casos de teste planejados para o ciclo foram executados.
-- Todos os defeitos encontrados foram:
-  - registrados em `01-bug-reports/` (BR-001 a BR-004), e
-  - priorizados com severidade/prioridade.
-- Resultados de execução dos casos de teste foram registrados (Status: Passou/Falhou).
+- All planned test cases for the cycle have been executed.
+- All defects found have been:
+  - logged in `01-bug-reports/` (BR-001 to BR-004), and
+  - prioritized with severity/priority.
+- Test case execution results have been recorded (Status: Passed/Failed).
 
-## 8. Riscos e Dependências
+## 8. Risks and Dependencies
 
-### 8.1. Riscos
+### 8.1. Risks
 
-- Instabilidade de rede pode afetar a reprodutibilidade de alguns cenários.
-- Mudanças de versão do aplicativo podem alterar o comportamento entre testes.
+- Network instability may affect the reproducibility of some scenarios.
+- Application version changes may alter behavior between tests.
 
-### 8.2. Dependências
+### 8.2. Dependencies
 
-- Disponibilidade dos servidores do AbacusAI.
-- Acesso contínuo à conta de teste.
+- Availability of AbacusAI servers.
+- Continuous access to the test account.
 
-## 9. Rastreamento (Traceability)
+## 9. Traceability
 
-- **BR-001** — relacionado a estabilidade da janela/fluxo principal de envio de prompts.
-- **BR-002** — relacionado à usabilidade de gerenciamento de abas/conversas.
-- **BR-003** — relacionado a robustez em condição de queda de rede.
-- **BR-004** — relacionado à experiência de formatação de mensagens (quebras de linha).
+- **BR-001** — related to window stability/main prompt submission flow.
+- **BR-002** — related to conversation tab management usability.
+- **BR-003** — related to robustness under network outage conditions.
+- **BR-004** — related to message formatting experience (line breaks).
 
-Cada bug report está associado a um ou mais tipos de teste descritos nas seções 4 e 5.
+Each bug report is associated with one or more test types described in sections 4 and 5.
