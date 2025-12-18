@@ -1,78 +1,77 @@
 # QA Portfolio — PontesSA90
 
-Este repositório serve como um portfólio prático, demonstrando habilidades em Quality Assurance (QA) manual e teste de API.
+This repository serves as a practical portfolio, demonstrating skills in manual Quality Assurance (QA), API testing, and UI test automation.
 
-## 1. Testes de QA Manual (AbacusAI Desktop)
+## 1. Manual QA Testing (AbacusAI Desktop)
 
-Esta seção do portfólio foca na aplicação de técnicas de QA manual sobre o aplicativo desktop do AbacusAI (modo Chat).
+This section of the portfolio focuses on applying manual QA techniques to the AbacusAI desktop application (Chat mode).
 
-### Estrutura
+### Structure
 
-Os artefatos referentes ao AbacusAI estão organizados em:
+Artifacts related to AbacusAI are organized as follows:
 
-- `abacus/01-bug-reports/` — Relatórios de bug e melhorias identificados:
-  - BR-001 — Travamento da janela do aplicativo ao enviar segundo prompt
-  - BR-002 — Melhoria na renomeação de abas de conversa
-  - BR-003 — Falta de aviso de falha de rede durante envio de prompt
-  - BR-004 — Remoção de múltiplas linhas em branco ao enviar mensagem (melhoria de usabilidade)
+- `abacus/01-bug-reports/` — Bug and improvement reports:
+  - BR-001 — AbacusAI desktop window stops responding after sending second prompt
+  - BR-002 — Conversation tab rename option unavailable in AbacusAI
+  - BR-003 — No network failure warning when connection is lost during prompt submission
+  - BR-004 — Blank lines inserted with Shift+Enter are ignored when sending the message (usability improvement)
 
-- `abacus/02-test-cases/` — Casos de teste documentados para funcionalidades do AbacusAI:
-  - TC-001 — Comportamento frente a instruções múltiplas e contraditórias
-  - TC-002 — Atalhos Enter e Shift+Enter e preservação de quebras de linha
-  - API-001 — Criar post via API pública JSONPlaceholder (POST /posts)
-  - API-002 — Criar post SEM título via API pública JSONPlaceholder (POST /posts)
+- `abacus/02-test-cases/` — Documented test cases for AbacusAI functionality:
+  - TC-001 — Behavior under multiple and contradictory instructions
+  - TC-002 — Enter and Shift+Enter shortcuts in the chat message field
+  - API-001 — Create post via JSONPlaceholder public API (POST /posts)
+  - API-002 — Create post WITHOUT title via JSONPlaceholder public API (POST /posts)
 
-- `abacus/03-test-plan/` — Plano de teste inicial para o aplicativo AbacusAI Desktop.
+- `abacus/03-test-plan/` — Initial test plan for the AbacusAI Desktop application.
 
-- `abacus/04-api-tests-postman/` — Contém informações sobre a collection do Postman utilizada e pode abrigar o arquivo de exportação da collection.
+- `abacus/04-api-tests-postman/` — Contains information about the Postman collection used and may store the exported collection file.
 
-- `abacus/05-evidence/` — Evidências visuais (prints) que suportam os bug reports.
+- `abacus/05-evidence/` — Visual evidence (screenshots) that support the bug reports.
 
-## Habilidades Gerais Demonstradas
+## General Skills Demonstrated
 
-- Criação de bug reports claros, com passos para reproduzir, resultado atual/esperado, severidade e prioridade.
-- Criação de casos de teste (test cases) a partir de cenários reais e requisitos de API.
-- Elaboração de um plano de teste.
-- Uso de Git e GitHub para versionamento e organização de artefatos de QA.
-- Testes exploratórios de usabilidade e comportamento sob falhas (ex.: queda de rede).
-- Pensamento crítico para identificar e documentar comportamentos inesperados ou melhorias.
+- Creation of clear bug reports, with steps to reproduce, actual/expected results, severity, and priority.
+- Design of test cases based on real scenarios and API requirements.
+- Creation of a structured test plan.
+- Use of Git and GitHub for versioning and organizing QA artifacts.
+- Exploratory testing of usability and behavior under failure conditions (e.g., network outage).
+- Critical thinking to identify and document unexpected behaviors or potential improvements.
 
 ---
 
-## 2. Testes de API (JSONPlaceholder com Postman)
+## 2. API Testing (JSONPlaceholder with Postman)
 
-Esta seção demonstra habilidades em teste de API utilizando a ferramenta Postman e uma API pública de demonstração (JSONPlaceholder). Estes testes são exercícios práticos e não estão relacionados ao produto AbacusAI.
+This section demonstrates API testing skills using Postman and a public demo API (JSONPlaceholder). These tests are practice exercises and are not related to the AbacusAI product.
 
-### Estrutura
+### Structure
 
-- `abacus/02-test-cases/` — Casos de teste documentados para cenários de API:
-  - API-001 — Criar post via API pública JSONPlaceholder (POST /posts)
-  - API-002 — Criar post SEM título via API pública JSONPlaceholder (POST /posts)
+- `abacus/02-test-cases/` — Documented test cases for API scenarios:
+  - API-001 — Create post via JSONPlaceholder public API (POST /posts)
+  - API-002 — Create post WITHOUT title via JSONPlaceholder public API (POST /posts)
 
-- `abacus/04-api-tests-postman/` — Contém informações sobre a collection do Postman utilizada e pode abrigar o arquivo de exportação da collection.
+- `abacus/04-api-tests-postman/` — Contains information about the Postman collection used and may store the exported collection file.
 
-### Habilidades demonstradas
+### Skills Demonstrated
 
-- Criação e execução de requisições HTTP (GET, POST) no Postman.
-- Análise de respostas de API (status codes, JSON body).
-- Planejamento e documentação de casos de teste para cenários de sucesso e de erro/validação em APIs.
+- Creation and execution of HTTP requests (GET, POST) in Postman.
+- Analysis of API responses (status codes, JSON body).
+- Planning and documentation of test cases for both successful and error/validation API scenarios.
 
-## 3. Automação de Testes (Playwright com Python)
+## 3. Test Automation (Playwright with Python)
 
-Esta seção demonstra habilidades em automação de testes de UI (User Interface) utilizando o framework Playwright com Python.
+This section demonstrates UI (User Interface) test automation skills using the Playwright framework with Python.
 
-### Estrutura
+### Structure
 
-- `abacus/06-automation/` — Contém os scripts de automação e um `README.md` detalhado sobre a configuração e os testes.
+- `abacus/06-automation/` — Contains the automation scripts and a detailed `README.md` about the setup and implemented tests.
 
-### Habilidades demonstradas
+### Skills Demonstrated
 
-- Configuração de ambiente para automação de testes.
-- Escrita de scripts para interagir com elementos de UI.
-- Validação de resultados na interface do usuário.
-- Uso de seletores CSS.
+- Environment setup for test automation.
+- Writing scripts to interact with UI elements.
+- Validation of results in the user interface.
+- Use of CSS selectors.
 
+### Next Steps
 
-### Próximos Passos
-
-Este portfólio está em constante evolução. Novas seções e exemplos podem ser adicionados para expandir as habilidades demonstradas.
+This portfolio is continuously evolving. New sections and examples may be added to expand the range of demonstrated skills.
